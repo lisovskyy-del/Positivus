@@ -1,0 +1,41 @@
+.description-text {
+  display: flex;
+  align-items: center;
+  gap: 2em;
+  margin: 7.4em 0em;
+  width: 70%;
+}
+
+.description-text > h2 {
+  display: flex;
+  align-self: flex-start;
+  background-color: var(--accent-color);
+  border-radius: 0.3em;
+  padding: 0.2em 0.48em;
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+
+.description-text > span {
+  display: inline-block;
+  font-size: 2rem;
+  background-color: var(--accent-color);
+  border-radius: 0.2em;
+  font-weight: 600;
+  padding: 0.2em;
+}
+
+@media (width < 800px) {
+  .description-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    margin: 4em 0em;
+    line-height: 1.5;
+  }
+  .description-text h2 {
+    align-self: center;
+  }
+}

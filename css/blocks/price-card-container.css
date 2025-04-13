@@ -1,0 +1,122 @@
+.price-card-container {
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+}
+
+.price-card {
+  border: 1px solid var(--dark-color);
+  width: 50%;
+  border-radius: 1em;
+  border-bottom: 5px solid var(--dark-color);
+}
+
+.price-card:nth-child(2) {
+  background-color: var(--dark-color);
+  color: var(--light-color);
+  .price-card__button:first-child {
+    background-color: var(--accent-color);
+    color: var(--dark-color);
+    font-weight: 700;
+    border: none;
+  }
+  .price-card__button {
+    background-color: var(--dark-color);
+    border: 2px solid var(--light-color);
+    color: var(--light-color);
+  }
+  .price-card__header span {
+    padding: 0.5em;
+    border-radius: 1em;
+    background-color: var(--accent-color);
+    color: var(--dark-color);
+    font-weight: 700;
+  }
+}
+
+.price-card__content {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  margin: 1.5em;
+}
+
+.price-card__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.price-card__header h2 {
+  font-size: 1.7rem;
+  font-weight: 500;
+}
+
+.price-card__price span:first-child {
+  font-size: 2.2rem;
+  font-weight: 600;
+}
+
+.price-card__button-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+.price-card__button {
+  padding: 1.5em;
+  border-radius: 1em;
+  border: 2px solid var(--dark-color);
+  font-size: 1rem;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+.price-card__button:first-child {
+  background-color: var(--dark-color);
+  color: white;
+}
+
+hr:nth-child(2) {
+  border-top: 2px solid var(--light-color);
+}
+
+.price-card__pros {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+}
+
+.price-card__pros div {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+.price-card__pros__image {
+  width: 5%;
+}
+
+.price-card__pros__text {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  font-weight: 500;
+}
+
+@media (width < 800px) {
+  .price-card-container {
+    display: block;
+  }
+  .price-card {
+    width: 100%;
+    margin: 1em 0em;
+  }
+  .price-card__pros__image {
+    width: 5%;
+  }
+}

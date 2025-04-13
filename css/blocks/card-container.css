@@ -1,0 +1,98 @@
+.card-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  place-items: center;
+  gap: 2.5em;
+  margin: 0 auto;
+}
+
+.card {
+  position: relative;
+  display: grid;
+  padding: 3.1em;
+  grid-template-columns: auto auto;
+  border: 1px solid var(--dark-color);
+  border-bottom: 7px solid var(--dark-color);
+  border-radius: 3em;
+  height: 20em;
+  width: 100%;
+}
+
+.card__text-container {
+  position: relative;
+  display: grid;
+  grid-template-rows: 1fr auto;
+  align-items: start;
+  width: min-content;
+}
+
+.card__text-container span {
+  border-radius: 0.3em;
+  padding: 0.2em;
+  font-size: 1.5rem;
+  display: inline;
+}
+
+.white-card {
+  background-color: var(--light-color);
+}
+
+.white-text {
+  background-color: var(--light-color);
+}
+
+.white-learn-more-text {
+  color: var(--light-color);
+}
+
+.green-card {
+  background-color: var(--accent-color);
+}
+
+.green-text {
+  background-color: var(--accent-color);
+}
+
+.black-card {
+  background-color: var(--dark-color);
+}
+
+.black-text {
+  background-color: var(--dark-color);
+}
+
+.card__learn-more {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-self: start;
+  margin-top: auto;
+  width: 15em;
+  gap: 1em;
+}
+
+.card__learn-more img {
+  width: 20%;
+}
+
+.card__learn-more p {
+  font-size: 1.5rem;
+}
+
+.card__image {
+  position: absolute;
+  align-self: center;
+  width: 50%;
+  right: 0;
+  height: auto;
+}
+
+@media (width < 800px) {
+  .card-container {
+    grid-template-columns: 1fr;
+  }
+  .card__learn-more img {
+    width: 20%;
+  }
+}

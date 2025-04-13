@@ -1,0 +1,27 @@
+.title-container {
+  margin: 2em 0em;
+}
+
+.title-container__text {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  width: 70%;
+}
+
+.title-container__text > h1 {
+  font-size: 4rem;
+  font-family: "Space Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.title-container__text > p {
+  font-size: 1rem;
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}

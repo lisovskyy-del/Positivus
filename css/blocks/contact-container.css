@@ -1,0 +1,88 @@
+.contact-container {
+  width: 100%;
+  display: flex;
+  margin: 2em 0em;
+  padding: 3em;
+  background-color: var(--light-color);
+  border-radius: 2em;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  width: 50%;
+}
+
+.contact-form__toggle {
+  display: flex;
+  gap: 1em;
+}
+
+input[type="radio"] {
+  accent-color: var(--accent-color);
+  margin-right: 0.4em;
+}
+
+.contact-form label {
+  margin-bottom: 0.3em;
+}
+.contact-form label {
+  margin-bottom: 0.3rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 0.8em 2em;
+  border: 1px solid var(--dark-color);
+  border-radius: 1em;
+  font-size: 1rem;
+  font-family: inherit;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border: 1px solid var(--accent-color);
+  box-shadow: 0 0 0 1px var(--accent-color);
+}
+
+.contact-form textarea {
+  resize: none;
+  min-height: 8em;
+}
+
+.contact-form button {
+  width: 100%;
+  justify-content: center;
+}
+
+.contact__image {
+  width: 50%;
+  text-align: right;
+}
+
+.contact__image img {
+  width: 75%;
+  height: 30em;
+}
+
+@media (width < 800px) {
+  .contact-container {
+    width: 80%;
+    margin: 2em auto;
+  }
+  .contact-form {
+    width: 100%;
+  }
+  .contact-form__toggle {
+    justify-content: center;
+    gap: 5em;
+  }
+  .contact-form__toggle label input {
+    transform: scale(2.5);
+  }
+  .contact__image {
+    display: none;
+  }
+}

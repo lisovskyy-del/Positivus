@@ -1,0 +1,13 @@
+@import url("./helpers/variables.css");
+@import url("./blocks/header.css");
+@import url("./blocks/title-container.css");
+@import url("./blocks/company-list.css");
+@import url("./blocks/description-text.css");
+@import url("./blocks/card-container.css");
+@import url("./blocks/proposal-container.css");
+@import url("./blocks/case-studies-container.css");
+@import url("./blocks/process-container.css");
+@import url("./blocks/team-card-container.css");
+@import url("./blocks/testimonials-container.css");
+@import url("./blocks/contact-container.css");
+@import url("./blocks/footer.css");
